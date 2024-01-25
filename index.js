@@ -27,7 +27,7 @@ fs.createReadStream('kepler_data.csv')
         console.log(err);
     })
     .on('end', () => {
-        //console.log(HabitablePlanets);    //Shows all the objects in the array
+        //console.log(HabitablePlanets);    //Shows all the objects in the array, not pretty.
         console.log(`${HabitablePlanets.length} habitable planets found!`);
         console.log(HabitablePlanets.map((planet) => {
             return planet['kepler_name'];
@@ -35,4 +35,4 @@ fs.createReadStream('kepler_data.csv')
     })
 //EVENT HANDLER
 
-//Habitable.map() runs a function that returns just the name of each object in the array 'HabitablePlanets'
+//Habitable.map() runs a function that returns just the name of each object in the array 'HabitablePlanets'(in this case).
